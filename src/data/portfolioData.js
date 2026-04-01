@@ -2,9 +2,13 @@
 
 export const personalInfo = {
   name: "Adesh Sonawane",
-  role: "Full Stack Developer",
+  roles: [
+        "Full Stack Developer",
+        "UI/UX Designer",
+        "Software Engineer"
+      ],
   greeting: "Hello, I'm",
-  description: "Specialized in Full Stack Development, building scalable and high-performance web applications.",
+  description: "Crafting scalable web applications and intuitive user experiences with modern technologies.",
   email: "adesh.sonawane789@gmail.com",
   phone: "+91 8600553690",
   location: "Nashik, Maharashtra",
@@ -21,7 +25,7 @@ export const socialLinks = [
 export const stats = [
   { value: 25, suffix: "+", label: "Technologies" },
   { value: 350, suffix: "+", label: "DSA Problems Solved" },
-  { value: 8, suffix: "+", label: "Project Done" },
+  { value: 8, suffix: "+", label: "Projects Built" },
   { value: 50, suffix: "+", label: "Certifications" },
 ];
 

@@ -129,10 +129,11 @@ const About = () => {
               style={{ transitionDelay: '400ms' }}
             >
               <p className="text-gray-400 leading-relaxed">
-                I'm a passionate <span className="text-purple font-medium">Full Stack Developer</span> specializing in the MERN stack, with a strong foundation in software development. I enjoy building scalable web applications and solving real-world problems through technology.
+                I'm Adesh Sonawane, a Computer Science engineering student at Lovely Professional University and a passionate <span className="text-purple font-medium">Full Stack Developer</span> specializing in the MERN stack. I enjoy building scalable web applications and solving real-world problems through technology.
               </p>
+                      
               <p className="text-gray-400 leading-relaxed">
-                I continuously work on improving my <span className="text-cyan font-medium">problem-solving skills,</span> including data structures and algorithms, while staying updated with modern web technologies. My approach combines technical expertise with attention to design, ensuring every project is both functional and visually appealing.
+                I continuously work on improving my <span className="text-cyan font-medium">problem-solving skills</span>, including data structures and algorithms, while staying updated with modern web technologies. My approach combines technical expertise with attention to design, ensuring every project is both functional and visually appealing.
               </p>
             </div>
 

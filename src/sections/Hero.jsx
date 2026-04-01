@@ -6,32 +6,44 @@ const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
-  const roleText = personalInfo.role;
-  const roleIndex = useRef(0);
+
+  const roles = personalInfo.roles;
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
-    
-    // Typewriter effect
-    const typeInterval = setInterval(() => {
-      if (roleIndex.current < roleText.length) {
-        setDisplayText(roleText.slice(0, roleIndex.current + 1));
-        roleIndex.current += 1;
-      } else {
-        clearInterval(typeInterval);
-      }
-    }, 100);
 
-    // Cursor blink
+    const currentRole = roles[roleIndex];
+    const typingSpeed = isDeleting ? 30 : 60;
+
+    const timeout = setTimeout(() => {
+      setDisplayText((prev) =>
+        isDeleting
+          ? currentRole.substring(0, prev.length - 1)
+          : currentRole.substring(0, prev.length + 1)
+      );
+
+      if (!isDeleting && displayText.length === currentRole.length) {
+        setTimeout(() => setIsDeleting(true), 800);
+      }
+    
+      else if (isDeleting && displayText === '') {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, roleIndex, roles]);
+
+  useEffect(() => {
     const cursorInterval = setInterval(() => {
-      setShowCursor(prev => !prev);
+      setShowCursor((prev) => !prev);
     }, 500);
 
-    return () => {
-      clearInterval(typeInterval);
-      clearInterval(cursorInterval);
-    };
-  }, [roleText]);
+    return () => clearInterval(cursorInterval);
+  }, []);
 
   const scrollToSection = (href) => {
     const element = document.querySelector(href);
