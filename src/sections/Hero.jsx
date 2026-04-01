@@ -161,8 +161,8 @@ const Hero = () => {
                 ))}
               </div>
               <div>
-                <p className="text-sm font-semibold text-white">5+ Projects</p>
-                <p className="text-xs text-gray-500">Built and deployed</p>
+                <p className="text-sm font-semibold text-white">8+ Projects</p>
+                <p className="text-xs text-gray-500">Built</p>
               </div>
             </div>
           </div>

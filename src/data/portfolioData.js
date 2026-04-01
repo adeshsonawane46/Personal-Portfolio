@@ -20,8 +20,8 @@ export const socialLinks = [
 
 export const stats = [
   { value: 25, suffix: "+", label: "Technologies" },
-  { value: 3, suffix: "+", label: "Internships" },
-  { value: 5, suffix: "+", label: "Project Done" },
+  { value: 350, suffix: "+", label: "DSA Problems Solved" },
+  { value: 8, suffix: "+", label: "Project Done" },
   { value: 50, suffix: "+", label: "Certifications" },
 ];
 
