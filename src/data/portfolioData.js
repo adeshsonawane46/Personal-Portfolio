@@ -47,7 +47,7 @@ export const experiences = [
     period: "Feb 2026 - Apr 2026",
     description: "Working on a virtual internship in Java Tech Stack, focusing on object-oriented programming, data structures, and backend development. Gaining hands-on experience through practical projects and strengthening problem-solving skills.",
     skills: ["Java", "OOP", "Data Structures & Algorithms", "SQL"],
-    current: true,
+    current: false,
   },
   
   {
