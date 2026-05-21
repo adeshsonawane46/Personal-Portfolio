@@ -14,7 +14,7 @@ export const personalInfo = {
   location: "Nashik, Maharashtra",
   image: "/hero-profile.png",
   aboutImage: "/about-image.png",
-  resumeLink: "/1.Adesh Sonawane CV.pdf",
+  resumeLink: "/1. Adesh Sonawane CV.pdf",
 };
 
 export const socialLinks = [
