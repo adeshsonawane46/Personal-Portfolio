@@ -32,15 +32,6 @@ export const stats = [
 export const experiences = [
   {
     id: 1,
-    role: "Java Developer Intern",
-    company: "Infosys Springboard",
-    period: "Feb 2026 - Present",
-    description: "Working on a virtual internship in Java Tech Stack, focusing on object-oriented programming, data structures, and backend development. Gaining hands-on experience through practical projects and strengthening problem-solving skills.",
-    skills: ["Java", "OOP", "Data Structures & Algorithms", "SQL"],
-    current: true,
-  },
-  {
-    id: 2,
     role: "Ai+ Insider",
     company: "Ai+ Smartphone",
     period: "Oct 2025 - Present",
@@ -48,6 +39,17 @@ export const experiences = [
     skills: ["Feature Testing", "Bug Identification", "Performance Analysis", "Technical Feedback", "User Experience Evaluation"],
     current: true,
   },
+
+  {
+    id: 2,
+    role: "Java Developer Intern",
+    company: "Infosys Springboard",
+    period: "Feb 2026 - Apr 2026",
+    description: "Working on a virtual internship in Java Tech Stack, focusing on object-oriented programming, data structures, and backend development. Gaining hands-on experience through practical projects and strengthening problem-solving skills.",
+    skills: ["Java", "OOP", "Data Structures & Algorithms", "SQL"],
+    current: true,
+  },
+  
   {
     id: 3,
     role: "AI Intern",
@@ -72,21 +74,21 @@ export const skills = [
     category: "Full Stack Development",
     icon: "Server",
     progress: 88,
-    skills: ["HTML", "CSS", "React.js", "Node.js", "Express.js", "Tailwind CSS", "REST APIs"],
+    skills: ["HTML", "CSS", "React.js", "Node.js", "Express.js", "Tailwind CSS", "Laravel", "REST APIs"],
   },
   {
     id: 3,
     category: "Database & Cloud",
     icon: "Database",
     progress: 80,
-    skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"],
+    skills: ["MongoDB", "PostgreSQL", "MySQL", "AWS EC2"],
   },
   {
     id: 4,
     category: "Tools & Platforms",
     icon: "Wrench",
     progress: 82,
-    skills: ["Git", "GitHub", "VS Code", "Vercel", "Netlify", "Render", "Figma", "Canva"],
+    skills: ["Git", "GitHub", "Docker", "Linux", "VS Code", "Vercel", "Netlify", "Render", "Figma", "Canva"],
   },
 ];
 
@@ -201,7 +203,7 @@ export const educationData = [
     title: "Undergraduate Degree (B.Tech, CSE)",
     institute: "Lovely Professional University",
     year: "2023 - 2027",
-    percentage: "CGPA: 6.97",
+    percentage: "CGPA: 7.03",
     description:
       "Focused on Computer Science, Full Stack Development, and Software Engineering, building scalable applications with hands-on projects.",
   },
